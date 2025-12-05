@@ -1,0 +1,8 @@
+# Input/output files & folders
+*.in
+output/
+
+# IDE config folders
+.idea/
+.vscode/
+.zed/

@@ -2,12 +2,10 @@
 dofile("../lib/lua/input.lua")
 dofile("../lib/lua/string_extensions.lua")
 
-DAY = 2
-
 local function part_one()
     local id_sum = 0
 
-    for line in input.lines(DAY) do
+    for line in input(2) do
         for _, range in pairs(line:split(",")) do
             local lower, upper = range:match("(%d+)%-(%d+)") -- hell on earth
 
@@ -26,7 +24,7 @@ end
 local function part_two()
     local id_sum = 0
 
-    for line in input.lines(DAY) do
+    for line in input(2) do
         for _, range in pairs(line:split(",")) do
             local lower, upper = range:match("(%d+)%-(%d+)") -- hell on earth
 

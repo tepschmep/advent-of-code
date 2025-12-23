@@ -2,13 +2,11 @@
 dofile("../lib/lua/input.lua")
 dofile("../lib/lua/string_extensions.lua")
 
-DAY = 1
-
 local function part_one()
     local dial = 50
     local password = 0 -- number of times dial == 0
 
-    for line in input.lines(DAY) do
+    for line in input(1) do
         local direction, distance = line:slice(1)
         local sign = (direction == "R" and 1 or -1)
         local rotation = distance * sign
@@ -24,7 +22,7 @@ local function part_two()
     local dial = 50
     local password = 0 -- number of times dial passes 0
 
-    for line in input.lines(DAY) do
+    for line in input(1) do
         local direction, distance = line:slice(1)
         local sign = (direction == "R" and 1 or -1)
         local rotation = distance * sign

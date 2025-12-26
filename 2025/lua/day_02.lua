@@ -12,7 +12,7 @@ local function get_digit (num, index, digit_count --[[optional, if you know it a
     return (num // 10^(digit_count - index)) % 10
 end
 
-local function part_one()
+local function part_one ()
     local id_sum = 0
    
     local pattern = "(%d+)%-(%d+)" -- matches two digits separated by a '-' and captures both digits
@@ -45,7 +45,7 @@ local function part_one()
     return math.tointeger(id_sum) -- in case it's still a float
 end
 
-local function part_two()
+local function part_two ()
     local id_sum = 0
 
     local pattern = "(%d+)%-(%d+)" -- matches two digits separated by a '-' and captures both digits
@@ -88,10 +88,10 @@ local function part_two()
     return math.tointeger(id_sum)
 end
 
-local function main()
-    print("--- Day 02: Gift Shop ---")
-    print("Part 1: " .. part_one())
-    print("Part 2: " .. part_two())
+local function main ()
+    print("DAY 02", "Gift Shop")
+    print("PART 1", part_one())
+    print("PART 2", part_two())
 end
 
 --------------------------------

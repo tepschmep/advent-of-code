@@ -2,7 +2,7 @@
 dofile("../lib/lua/input.lua")
 dofile("../lib/lua/string_extensions.lua")
 
-local function part_one()
+local function part_one ()
     local dial = 50
     local password = 0 -- number of times dial == 0
 
@@ -18,7 +18,7 @@ local function part_one()
     return password
 end
 
-local function part_two()
+local function part_two ()
     local dial = 50
     local password = 0 -- number of times dial passes 0
 
@@ -45,10 +45,10 @@ local function part_two()
     return password
 end
 
-local function main()
-    print("--- Day 01: Secret Entrance ---")
-    print("Part 1: " .. part_one())
-    print("Part 2: " .. part_two())
+local function main ()
+    print("DAY 01", "Secret Entrance")
+    print("PART 1", part_one())
+    print("PART 2", part_two())
 end
 
 --------------------------------
